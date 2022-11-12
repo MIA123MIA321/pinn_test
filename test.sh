@@ -36,5 +36,5 @@ ${PYPATH} \
 >> ${TMP_PATH} 2>&1 &
 
 
-# tail -f /data/liuziyang/pde_solver/pinn/.tmp.log
+# tail -f .tmp.log
 # 来查看运算进度
