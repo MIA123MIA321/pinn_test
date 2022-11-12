@@ -26,12 +26,6 @@ We input the $q,f$ to the network, aftre some training, we get the output $u_{re
 
 We test the relative error on the resolution = 256 $\times$ 256
 
-$$
-\begin{equation}
-\text { Model-Err }=\frac{\left\||u_{r e s}-u_{\text {truth }}\right\||_{L_2}}{\left\||u_{\text {truth }}\right\||_{L_2}}
-\end{equation}
-$$
-
 ***
 
 ## Network
