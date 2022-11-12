@@ -70,13 +70,13 @@ Adam , learning rate = 1e-4
 ## Getting Started
 
 1. Modifying the following arguments in `test.sh`:
-* maxiter : total epochs of trainging
-* N : number of points sampled in $\Omega$
-* n : number of points sampled on each boundary of $\partial \Omega$  
-* grids : resolution of testing
-* k : frequency of the equation
-* m : frequency of $u_{truth}$
-* gpu : 'yes' or 'no' to compute with gpu or not
+* **maxiter** : total epochs of training
+* **N** : number of points sampled in $\Omega$
+* **n** : number of points sampled on each boundary of $\partial \Omega$  
+* **grids** : resolution of testing
+* **k** : frequency of the equation
+* **m** : frequency of $u_{truth}$
+* **gpu** : 'yes' or 'no' to compute with gpu or not
 2.  `bash test.sh`
 3.  `tail -f .tmp.log` to get the code progress
 4.  check `heatmap/` for the training results and `relative/` for the process of training
