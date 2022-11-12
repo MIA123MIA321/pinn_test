@@ -79,8 +79,8 @@ Adam , learning rate = 1e-4
 * **gpu** : 'yes' or 'no' to compute with gpu or not
 2.  `bash test.sh`
 3.  `tail -f .tmp.log` to get the code progress
-4.  check `heatmap/` for the training results and `relative/` for the process of training
-    `'maxiter_cpu/gpu_N_n_k_m.jpg'`
+4.  check `heatmap/` for the training results and `relative/` for the process of training<br/>
+    filename: `'maxiter_cpu/gpu_N_n_k_m.jpg'`
 
 ## Examples of Results
 N = 40000 n = 1000 k = 2 m = (3,4) with `GPU` after 10000 epochs
