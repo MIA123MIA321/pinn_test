@@ -75,7 +75,7 @@ Adam , learning rate = 1e-4
 ## Getting Started
 
 1. Modifying the following arguments in `test.sh`:
-* maxiter : total epohs of trainging
+* maxiter : total epochs of trainging
 * N : number of points sampled in $\Omega$
 * n : number of points sampled on each boundary of $\partial \Omega$  
 * grids : resolution of testing
@@ -83,8 +83,11 @@ Adam , learning rate = 1e-4
 * m : frequency of $u_{truth}$
 * gpu : 'yes' or 'no' to compute with gpu or not
 2.  `bash test.sh`
-3.  check `heatmap/` for the training results and `relative/` for the process of training
+3.  `tail -f .tmp.log` to get the code progress
+4.  check `heatmap/` for the training results and `relative/` for the process of training
     `'maxiter_cpu/gpu_N_n_k_m.jpg'`
 
 ## Examples of Results
-N = 40000, n = 1000, k = 2, m = (5,4)
+N = 40000 n = 1000 k = 2 m = (3,4) with `GPU` after 10000 epochs
+<img src="https://github.com/MIA123MIA321/pinn_test/blob/main/heatmap/gpu_10000_N_40000_n_5000_k_2.0_m_3%2C4.jpg" width="800"/>
+<img src="https://github.com/MIA123MIA321/pinn_test/blob/main/relative/gpu_10000_N_40000_n_5000_k_2.0_m_3%2C4.jpg" width="800"/>
