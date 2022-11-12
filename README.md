@@ -81,7 +81,10 @@ Adam , learning rate = 1e-4
 * grids : resolution of testing
 * k : frequency of the equation
 * m : frequency of $u_{truth}$
-* gpu : 'yes' or 'no' to computer with gpu or not
+* gpu : 'yes' or 'no' to compute with gpu or not
 2.  `bash test.sh`
 3.  check `heatmap/` for the training results and `relative/` for the process of training
     `'maxiter_cpu/gpu_N_n_k_m.jpg'`
+
+## Examples of Results
+N = 40000, n = 1000, k = 2, m = (5,4)
