@@ -2,8 +2,8 @@
 
 $$
 \begin{aligned}
-\Delta u + k^2(1+q)u &= f \,\, \text{in} \, \,\Omega\\
-u &= 0\,\, \text{on}\,\, \partial \Omega\\
+\Delta u + k^2(1+q)u &= f  \quad \text{in}\quad  \Omega\\
+u &= 0\quad \text{on} \quad \partial \Omega\\
 \end{aligned}
 $$
 
@@ -49,7 +49,7 @@ Random Sampling
 
 * $N$ points in $\Omega$ 
 
-* $n$ points on each boundary of $\partial \Omega$  
+* $n$ 
 
 #### Loss function
 
@@ -74,5 +74,14 @@ Adam , learning rate = 1e-4
 
 ## Getting Started
 
-#### Modifying the following arguments in (test.sh):
-
+1. Modifying the following arguments in `test.sh`:
+* maxiter : total epohs of trainging
+* N : number of points sampled in $\Omega$
+* n : number of points sampled on each boundary of $\partial \Omega$  
+* grids : resolution of testing
+* k : frequency of the equation
+* m : frequency of $u_{truth}$
+* gpu : 'yes' or 'no' to computer with gpu or not
+2.  `bash test.sh`
+3.  check `heatmap/` for the training results and `relative/` for the process of training
+    `'maxiter_cpu/gpu_N_n_k_m.jpg'`
