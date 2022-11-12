@@ -32,16 +32,15 @@ We test the relative error on the resolution = 256 $\times$ 256
 
 Unsupervised Learning 
 
-* nn.Linear(2,64)
-* nn.Tanh()
-* Nn.Linear(64,64)
-
-* nn.Tanh()
-* nn.Linear(64,64)
-* nn.Tanh()
-* nn.Linear(64,64)
-* nn.Tanh()
-* nn.Linear(64,1)
+* `nn.Linear(2,64)`
+* `nn.Tanh()`
+* `nn.Linear(64,64)`
+* `nn.Tanh()`
+* `nn.Linear(64,64)`
+* `nn.Tanh()`
+* `nn.Linear(64,64)`
+* `nn.Tanh()`
+* `nn.Linear(64,1)`
 
 #### Sampling
 
