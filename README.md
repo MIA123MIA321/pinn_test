@@ -22,9 +22,9 @@ f(x,y) &= (k^2(1+q(x,y)) - m_1^2-m_2^2)\sin(m_1 x)\sin(m_2 y)
 \end{aligned}
 $$
 
-We input the $q,f$ to the network, aftre some training, we get the output $u_{res}$ .
+We input the $q,f$ to the network, aftre some training, we get the output $u_{res}$ .<br/>
 
-We test the relative error on the resolution = 256 $\times$256 
+We test the relative error on the resolution = 256 $\times$256 <br/>
 $$
 \text{Model-Err} = \frac{\sqrt{\sum_{i,j=0}^{255}|u_{res}(\frac{i}{256},\frac{j}{256})-u_{truth}(\frac{i}{256},\frac{j}{256})|^2}}{\sqrt{\sum_{i,j=0}^{255}|u_{truth}(\frac{i}{256},\frac{j}{256})|^2}}
 $$
@@ -33,7 +33,7 @@ $$
 
 ## Network
 
-Unsupervised Learning
+Unsupervised Learning 
 
 * nn.Linear(2,64)
 * nn.Tanh()
@@ -56,7 +56,7 @@ Random Sampling
 
 #### Loss function
 
-MSE LOSS
+MSE LOSS<br/>
 $$
 \begin{aligned}
 l_{int}(x,y) &= (\Delta u_{res} + k^2(1+q)u_{res} - f )(x,y)\\
