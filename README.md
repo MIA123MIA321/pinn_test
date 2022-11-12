@@ -24,7 +24,7 @@ $$
 
 We input the $q,f$ to the network, aftre some training, we get the output $u_{res}$ .<br/>
 
-We test the relative error on the resolution = 256 $\times$256 <br/>
+We test the relative error on the resolution = 256 $\times$ 256 <br/>
 $$
 \text{Model-Err} = \frac{\sqrt{\sum_{i,j=0}^{255}|u_{res}(\frac{i}{256},\frac{j}{256})-u_{truth}(\frac{i}{256},\frac{j}{256})|^2}}{\sqrt{\sum_{i,j=0}^{255}|u_{truth}(\frac{i}{256},\frac{j}{256})|^2}}
 $$
@@ -56,19 +56,19 @@ Random Sampling
 
 #### Loss function
 
-MSE LOSS<br/>
+MSE LOSS
 $$
 \begin{aligned}
-l_{int}(x,y) &= (\Delta u_{res} + k^2(1+q)u_{res} - f )(x,y)\\
-l_{left}(0,y) &= u(0,y) \\
-l_{right}(1,y) &= u(1,y) \\
-l_{up}(x,1) &=u(x,1)\\ 
-l_{down}(x,0) &= u(x,0)\\
-l_{total} &= \text{MSE}(\vec{l_{int}}) + \text{MSE}( \vec{l_{left}})+ \text{MSE}( \vec{l_{right}})+ \text{MSE}( \vec{l_{up}})+ \text{MSE}(\vec{l_{down}})
+l_{\text {int }}(x, y) &=\left(\Delta u_{\text {res }}+k^2(1+q) u_{\text {res }}-f\right)(x, y) \\
+l_{\text {left }}(0, y) &=u(0, y) \\
+l_{\text {right }}(1, y) &=u(1, y) \\
+l_{\text {up }}(x, 1) &=u(x, 1) \\
+l_{\text {down }}(x, 0) &=u(x, 0) \\
+l_{\text {total }} &=\operatorname{MSE}\left(l_{\text {int }}\right)+\operatorname{MSE}\left(l_{\text {left }}\right)+\operatorname{MSE}\left(l_{\text {right }}\right)+\operatorname{MSE}\left(l_{\text {up }}\right)+\operatorname{MSE}\left(l_{\text {down }}\right)
 \end{aligned}
 $$
 
-#### optimizer
+#### Optimizer
 
 Adam , learning rate = 1e-4
 
