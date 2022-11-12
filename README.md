@@ -24,9 +24,12 @@ $$
 
 We input the $q,f$ to the network, aftre some training, we get the output $u_{res}$ .<br/>
 
-We test the relative error on the resolution = 256 $\times$ 256 <br/>
+We test the relative error on the resolution = 256 $\times$ 256
+
 $$
-\text{Model-Err} = \frac{\sqrt{\sum_{i,j=0}^{255}|u_{res}(\frac{i}{256},\frac{j}{256})-u_{truth}(\frac{i}{256},\frac{j}{256})|^2}}{\sqrt{\sum_{i,j=0}^{255}|u_{truth}(\frac{i}{256},\frac{j}{256})|^2}}
+\begin{equation}
+\text { Model-Err }=\frac{\left\||u_{r e s}-u_{\text {truth }}\right\||_{L_2}}{\left\||u_{\text {truth }}\right\||_{L_2}}
+\end{equation}
 $$
 
 ***
@@ -57,6 +60,7 @@ Random Sampling
 #### Loss function
 
 MSE LOSS
+
 $$
 \begin{aligned}
 l_{\text {int }}(x, y) &=\left(\Delta u_{\text {res }}+k^2(1+q) u_{\text {res }}-f\right)(x, y) \\
