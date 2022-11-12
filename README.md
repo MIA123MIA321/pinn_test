@@ -24,7 +24,7 @@ $$
 
 We input the $q,f$ to the network, aftre some training, we get the output $u_{res}$ .<br/>
 
-We test the relative error on the resolution = 256 $\times$ 256
+We test the $L_2$ relative error on the resolution = 256 $\times$ 256
 
 ***
 
