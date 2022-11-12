@@ -47,10 +47,6 @@ Unsupervised Learning
 
 Random Sampling
 
-* $N$ points in $\Omega$ 
-
-* $n$ 
-
 #### Loss function
 
 MSE LOSS
