@@ -84,5 +84,5 @@ Adam , learning rate = 1e-4
 
 ## Examples of Results
 N = 40000 n = 1000 k = 2 m = (3,4) with `GPU` after 10000 epochs
-<img src="heatmap/gpu_10000_N_40000_n_5000_k_2.0_m_3%2C4.jpg" width="800"/>
-<img src="relative/gpu_10000_N_40000_n_5000_k_2.0_m_3%2C4.jpg" width="800"/>
+<img src="heatmap/gpu_10000_N_40000_n_5000_k_2.0_m_3,4.jpg" width="800"/>
+<img src="relative/gpu_10000_N_40000_n_5000_k_2.0_m_3,4.jpg" width="800"/>
